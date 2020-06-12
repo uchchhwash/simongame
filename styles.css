@@ -20,8 +20,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -46,8 +46,22 @@ body {
 .yellow {
   background-color: yellow;
 }
-
+.saddlebrown{
+  background-color: saddlebrown;
+}
+.palevioletred{
+  background-color: palevioletred;
+}
+.white {
+  background-color: white;
+}
+.orange{
+  background-color: orange;
+}
+.indigo{
+  background-color: indigo;
+}
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
-}
+} 
