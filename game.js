@@ -3,11 +3,14 @@ var buttonColors = ["red", "blue", "green", "yellow"]
 var gamePattern = [];
 var userClickedPattern = [];
 
+var gameFlag = false;
+var level = 1;
 
 gamePattern.push(randomChosenColour);
 
 function nextSequence(){
     userClickedPatern = [];
+    level += 1;
     var randomNumber = Math.floor(Math.random() * (3 - 0 + 1) ) + 0;
     var randomChosenColour = buttonColors[nextSequence];
     gamePattern.push(randomChosenColour);
