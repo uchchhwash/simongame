@@ -41,7 +41,7 @@ function resultCheck(currentLevel) {
             $("body").removeClass("game-over");
         }, 200);
 
-        startOver();
+        tryAgain();
 
     }
 }
@@ -65,4 +65,10 @@ function animatePress(currentColor) {
 function playSound(soundFile) {
     var audio = new Audio("sounds/" + soundFile + ".mp3");
     audio.play();
+}
+
+function tryAgain() {
+    level = 0;
+    gamePattern = [];
+    gameFlag = false;
 }
