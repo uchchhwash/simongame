@@ -28,6 +28,7 @@ function nextSequence() {
     userClickedPattern = [];
     level++;
     $("#level-title").text("Level " + level);
+    $("#instructions").hide();
     var randomNumber = Math.floor(Math.random() * 9);
     var randomChosenColour = buttonColors[randomNumber];
     gamePattern.push(randomChosenColour);
@@ -75,4 +76,5 @@ function tryAgain() {
     level = 0;
     gamePattern = [];
     gameFlag = false;
+    $("#instructions").show();
 }
