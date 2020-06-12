@@ -14,6 +14,13 @@ $(document).keypress(function () {
     }
 })
 
+$(".btnHover").click(function () {
+    if (!gameFlag) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        gameFlag = true;
+    }
+})
 
 $(".btn").click(function () {
     var userChosenColour = $(this).attr("id");
