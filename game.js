@@ -13,6 +13,7 @@ $(".btn").click(function(){
     var userChosenColour = $(this).attr("id");
     console.log(userChosenColour);
     animatePress(userChosenColour);
+    playSound(userChosenColour);
 })
 
 
@@ -23,3 +24,7 @@ function animatePress(currentColor){
     }, 100)
 }
 
+function playSound(soundFile){
+    var audio = new Audio("sounds/" + soundFile + ".mp3");
+    audio.play();
+}
